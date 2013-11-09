@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Colour Game</title>
+<link rel="stylesheet" type="text/css" href="colourstyle.css" />
+</head>
+
+<body>
+
+
+<h1>The Colour Game</h1>
+
+<h2>Click the square which matches the colour described</h2>
+
+<div align="center">
+<form>
+<input type="text" id="txt" />
+</form>
+<form id="timelimit">
+<select id="timeselect">
+  <option>30 Seconds</option>
+  <option>20 Seconds</option>
+  <option>10 Seconds</option>
+  </select>
+</form>
+</div>
+
+<p1 id="collist">collist</p1>
+
+<p id="colselect">This is the last colour selected</p>
+
+<p id="total">0</p>
+
+
+<canvas id="0" onclick="canfunc('GREEN')" width="170" height="170" style="border:3px solid #000000;" ></canvas>
+
+<canvas id="1" onclick="canfunc('RED')" width="170" height="170" style="border:3px solid #000000;" ></canvas>
+
+<canvas id="2" onclick="canfunc('BLUE')" width="170" height="170" style="border:3px solid #000000;" ></canvas>
+
+<canvas id="3" onclick="canfunc('BLACK')" width="170" height="170" style="border:3px solid #000000;" ></canvas>
+
+<canvas id="4" onclick="canfunc('ORANGE')" width="170" height="170" style="border:3px solid #000000;" ></canvas>
+
+
+<script>
+var num = Math.round(Math.random()*4)
+var colour = ['GREEN', 'RED', 'BLUE', 'BLACK', 'ORANGE'];
+var n = document.getElementById("collist");
+n.innerHTML = colour[num]
+n.style.color = colour[num]
+
+var anscolour = ["#008000", "#FF0000", "#0000FF", "#000000", "#FFA500"];
+var a1 = document.getElementById(0);
+var a2 = document.getElementById(1);
+var a3 = document.getElementById(2);
+var a4 = document.getElementById(3);
+var a5 = document.getElementById(4);
+
+var ctx1 = a1.getContext("2d");
+var ctx2 = a2.getContext("2d");
+var ctx3 = a3.getContext("2d");
+var ctx4 = a4.getContext("2d");
+var ctx5 = a5.getContext("2d");
+
+ctx1.fillStyle = anscolour[0];
+ctx1.fillRect(0,0,200,200);
+ctx2.fillStyle = anscolour[1];
+ctx2.fillRect(0,0,200,200);
+ctx3.fillStyle = anscolour[2];
+ctx3.fillRect(0,0,200,200);
+ctx4.fillStyle = anscolour[3];
+ctx4.fillRect(0,0,200,200);
+ctx5.fillStyle = anscolour[4];
+ctx5.fillRect(0,0,200,200);
+
+d=0
+function canfunc(colour)
+{
+var nume = Math.floor(Math.random()*5)
+var numr = Math.floor(Math.random()*5)
+var coloure = ['GREEN', 'RED', 'BLUE', 'BLACK', 'ORANGE'];
+var y = document.getElementById("collist");
+
+raise()
+
+d=d+1
+var t = document.getElementById("total");
+var x = document.getElementById("colselect");
+x.innerHTML = colour;
+x.style.color = colour;
+t.innerHTML = d;
+if (x.innerHTML == n.innerHTML)
+	{
+	y.innerHTML = coloure[nume]
+	y.style.color = coloure[numr]
+	gametimer()
+	countdown()
+	}
+else
+	{
+	scorefunc()
+	stopCount()	
+	location.reload()	
+	}
+}
+var c=0;
+var t;
+var timer_is_on=0;
+
+function timedCount()
+{
+document.getElementById('txt').value=c;
+c=c+1;
+t=setTimeout(function(){timedCount()},1000);
+}
+
+function gametimer()
+{
+if (!timer_is_on)
+  {
+  timer_is_on=1;
+  timedCount();
+  }
+}
+function stopCount()
+{
+clearTimeout(t);
+timer_is_on=0;
+}
+
+function countdown()
+{
+setTimeout(function(){alert("Game Over\nYour time score is:" + d),location.reload()},time[h]);
+}
+
+var time = ["31000", "21000", "11000"];
+function raise()
+{
+var index = document.getElementById("timeselect");
+h = (index.selectedIndex);
+}
+
+function scorefunc()
+{
+var m;
+
+var name = alert("Game Over\nYour time score is:" + d);
+location.reload()
+
+if (name!=null)
+  	{
+  	m = name;
+  	}
+}
+</script>
+
+
+
+</body>
+</html>
