@@ -1,0 +1,73 @@
+body
+{
+background-image:url('colour.gif');
+background-repeat:no-repeat;
+background-position:center;
+margin-left:40px;
+margin-right:40px;
+text-align:center;
+}
+h1
+{
+font-family:"Comic Sans MS",cursive,sans-serif;
+}
+h2
+{
+font-family:"Comic Sans MS",cursive,sans-serif;
+}
+p1
+{
+font-size:90px;
+font-family:"Comic Sans MS",cursive,sans-serif;
+text-align:center;
+}
+p
+{
+font-size:20px;
+font-family:"Comic Sans MS",cursive,sans-serif;
+text-align:center;
+}
+ul
+{
+list-style-type:none
+margin:0;
+padding:0;
+overflow:hidden;
+}
+li
+{
+float:left;
+}
+a:link,a:visited
+{
+display:block;
+width:170px;
+font-weight:bold;
+font-family:"Comic Sans MS",cursive,sans-serif;
+color:#FFFFFF;
+background-color:#D2691E;
+text-align:center;
+padding:4px;
+text-decoration:none;
+text-transform:uppercase;
+}
+a:hover,a:active
+{
+background-color:#CD853F;
+}
+dt
+{
+font-size:30px;
+font-family:"Comic Sans MS",cursive,sans-serif;
+text-align:center;
+}
+dd
+{
+font-size:20px;
+font-family:"Comic Sans MS",cursive,sans-serif;
+text-align:center;
+}
+canvas
+{
+cursor:crosshair;
+}
