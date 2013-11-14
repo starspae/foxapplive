@@ -12,8 +12,7 @@
     "name": "Starspae",
     "url": "https://github.com/starspae/foxapplive"
   },
-  "installs_allowed_from": ["*"],
-  "appcache_path": "/cache.manifest",
+  
   "locales": {
     "es": {
       "description": "Elige el color para que coincida con la palabra",
