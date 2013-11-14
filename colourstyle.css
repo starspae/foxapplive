@@ -3,8 +3,6 @@ body
 background-image:url('colour.gif');
 background-repeat:no-repeat;
 background-position:center;
-margin-left:5%;
-margin-right:5%;
 text-align:center;
 }
 h1
@@ -17,13 +15,13 @@ font-family:"Comic Sans MS",cursive,sans-serif;
 }
 p1
 {
-font-size:90px;
+font-size:60px;
 font-family:"Comic Sans MS",cursive,sans-serif;
 text-align:center;
 }
 p
 {
-font-size:20px;
+font-size:10px;
 font-family:"Comic Sans MS",cursive,sans-serif;
 text-align:center;
 }
@@ -70,12 +68,9 @@ text-align:center;
 canvas
 {
 cursor:crosshair;
-width:9%;
-height:9%;
-border-width:1px;
-border-color:#000000;
+width:30%;
+height:30%;
 }
-
 
 
 
