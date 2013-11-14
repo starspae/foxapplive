@@ -1,8 +1,5 @@
 body
 {
-background-image:url('colour.gif');
-background-repeat:no-repeat;
-background-position:center;
 text-align:center;
 }
 h1
@@ -71,7 +68,6 @@ cursor:crosshair;
 width:30%;
 height:30%;
 }
-
 
 
 
