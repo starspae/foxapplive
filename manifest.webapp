@@ -2,7 +2,7 @@
   "version": "0.1",
   "name": "ColourGame",
   "description": "Pick the colour to match the word",
-  "launch_path": "/",
+  "launch_path": "/index.html",
   "icons": {
     "16": "/img/icons/col-16.png",
     "48": "/img/icons/col-48.png",
