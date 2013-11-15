@@ -1,6 +1,6 @@
 {
-  "version": "0.1",
-  "name": "The Colour Game",
+  "version": "0.4",
+  "name": "Colr",
   "description": "Pick the colour to match the word",
   "launch_path": "/index.html",
   "icons": {
