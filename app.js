@@ -88,7 +88,7 @@ function countdown()
 setTimeout(function(){alert("Game Over\nYour time score is:" + d),location.reload()},time[h]);
 }
 
-var time = ["31000", "21000", "11000"];
+var time = ["30000", "20000", "10000"];
 function raise()
 {
 var index = document.getElementById("timeselect");
@@ -98,8 +98,8 @@ h = (index.selectedIndex);
 function scorefunc()
 {
 var m;
-
-var name = alert("Game Over\nYour time score is:" + d);
+var oo=d-1;
+var name = alert("Game Over\nYour time score is:" + oo);
 location.reload()
 
 if (name!=null)
