@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-    <title>Foxapp</title>
+    <title>Colr</title>
     <link rel="stylesheet" href="style.css">
   
 
@@ -15,15 +15,30 @@
 <body>
 
 
-<h1>The Colour Game</h1>
+<h1>The Colour Game: Level 1</h1>
 
+
+<div align="center">
+<form>
+<input type="text" class="text" id="txt" />
+</form>
+<form id="timelimit">
+<select class="time" id="timeselect">
+  <option>30 Seconds</option>
+  <option>20 Seconds</option>
+  <option>10 Seconds</option>
+  </select>
+</form>
+</div>
 
 
 <p1 id="collist">collist</p1>
 
-<p id="colselect">This is the last colour selected</p>
+<p id="colselect"></p>
 
-<p id="total">0</p>
+<span class="score">
+<p class="score" id="total">0</p>
+</span>
 
 
 <canvas id="0" onclick="canfunc('GREEN')"></canvas>
@@ -37,20 +52,6 @@
 <canvas id="4" onclick="canfunc('ORANGE')"></canvas>
 
 
-<p>Touch the square which matches the colour described</p>
-
-<div align="center">
-<form>
-<input type="text" id="txt" />
-</form>
-<form id="timelimit">
-<select id="timeselect">
-  <option>30 Seconds</option>
-  <option>20 Seconds</option>
-  <option>10 Seconds</option>
-  </select>
-</form>
-</div>
 
     
 <script src="app.js"></script>
