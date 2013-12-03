@@ -1,0 +1,95 @@
+.red
+{
+width:128px;
+height:128px;
+top:30%;
+left:30%;
+position:absolute;
+animation:redsplat 4s linear infinite;
+}
+@keyframes redsplat
+{
+0%   {width:2px;height:2px}
+100%  {width:128px;height:128px}
+}
+
+
+
+
+
+
+
+
+
+
+.letterc
+{
+width:200px;
+height:200px;
+top:20%;
+left:18%;
+position:absolute;
+animation:letterc 4s linear infinite;
+}
+@keyframes letterc
+{
+0%   {left:18%;top:20%}
+25%  {left:30%;top:25%}
+50%  {left:28%;top:20%}
+75%  {left:18%;top:20%}
+100%  {left:18%;top:20%}
+}
+
+.lettero
+{
+width:200px;
+height:200px;
+top:17%;
+left:19%;
+position:absolute;
+animation:lettero 4s linear infinite;
+}
+@keyframes lettero
+{
+0%   {left:19%;top:17%}
+25%  {left:10%;top:25%}
+50%  {left:28%;top:20%}
+75%  {left:19%;top:17%}
+100%  {left:19%;top:17%}
+}
+
+.letterl
+{
+width:200px;
+height:200px;
+top:20%;
+left:29%;
+position:absolute;
+animation:letterl 4s infinite;
+}
+@keyframes letterl
+{
+0%   {left:29%;top:20%}
+25%  {left:40%;top:35%}
+50%  {left:28%;top:20%}
+75%  {left:29%;top:20%}
+100%  {left:29%;top:20%}
+}
+
+.letterr
+{
+width:200px;
+height:200px;
+top:20%;
+left:31%;
+position:absolute;
+animation:letterr 4s infinite;
+}
+@keyframes letterr
+{
+0%   {left:31%;top:20%}
+25%  {left:25%;top:10%}
+50%  {left:28%;top:20%}
+75%  {left:31%;top:20%}
+100%  {left:31%;top:20%}
+}
