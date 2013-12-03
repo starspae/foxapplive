@@ -1,0 +1,31 @@
+{
+  "version": "0.3",
+  "name": "Colr",
+  "description": "A simple Colour picking game",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/img/icons/col-16.png",
+    "48": "/img/icons/col-48.png",
+    "128": "/img/icons/col-128.png"
+  },
+  "developer": {
+    "name": "Starspae",
+    "url": "https://github.com/starspae/foxapplive"
+  },
+  
+  "locales": {
+    "es": {
+      "description": "Elige el color para que coincida con la palabra",
+      "developer": {
+        "url": "https://github.com/starspae/foxapplive"
+      }
+    },
+    "it": {
+      "description": "Scegli il colore per abbinare la parola",
+      "developer": {
+        "url": "https://github.com/starspae/foxapplive"
+      }
+    }
+  },
+  "default_locale": "en"
+}
