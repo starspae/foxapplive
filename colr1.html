@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <title>Colr</title>
+    <link rel="stylesheet" href="style.css">
+  
+<meta name="description" content="The Colour Game">
+    
+   	<link rel="icon" type="image/png"  href="favicon.ico">
+</head>
+
+<body>
+<a class="navbar" id="navbar" href="menu.html">Colr: Level 1</a>
+
+<br>
+<br>
+
+<div align="center">
+<form id="bowser">
+<input type="text" class="text" id="txt" />
+</form>
+<form id="timelimit">
+<select class="time" id="timeselect">
+  <option>30 Seconds</option>
+  <option>20 Seconds</option>
+  <option>10 Seconds</option>
+  </select>
+</form>
+</div>
+
+
+<p1 id="collist">collist</p1>
+
+<p class="hideme" id="colselect"></p>
+
+<span class="score">
+<p class="score" id="total">0</p>
+</span>
+
+
+<canvas id="0" onclick="canfunc('GREEN')"></canvas>
+
+<canvas id="1" onclick="canfunc('RED')"></canvas>
+
+<canvas id="2" onclick="canfunc('BLUE')"></canvas>
+
+<canvas id="3" onclick="canfunc('BLACK')"></canvas>
+
+<canvas id="4" onclick="canfunc('ORANGE')"></canvas>
+
+
+
+    
+<script src="app.js"></script>
+
+
+  </body>
+</html>
