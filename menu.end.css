@@ -1,0 +1,26 @@
+body
+{
+text-align:center;
+background-image:url('img/mazeend.png');
+background-color:#FFFFFF;
+font-family:"Comic Sans MS",cursive,sans-serif;
+}
+h
+{
+font-size:30px;
+}
+.logo
+{
+width:100%;
+height:100%;
+}
+.startbutton
+{
+width:80%;
+height:80%;
+}
+.starspae
+{
+width:30%;
+height:30%;
+}
