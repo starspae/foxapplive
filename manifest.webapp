@@ -14,22 +14,22 @@
 	"es": {
 	"description": "Pulse sobre la ruta que estalló a comienzos de hacer su camino a través del laberinto",
 	"developer": {
-   		"name": "Tommy Davies spain",
-    		"url": "https://github.com/starspae/foxapplive"
+   		"name": "Tommy Davies",
+    		"url": "https://github.com/starspae/foxapplive.git"
 			}
 },
 	"it": {
 	"description": "Toccare il percorso che è balenato alla partenza per rendere il vostro senso attraverso il labirinto",
 	"developer": {
-   		"name": "Tommy Davies italy",
-    		"url": "https://github.com/starspae/foxapplive"
+   		"name": "Tommy Davies",
+    		"url": "https://github.com/starspae/foxapplive.git"
 		}
 },
 	"en": {
 	"description": "Tap the path that is flashed at the start to make your way through the maze",
 	"developer": {
-   		"name": "Tommy Davies england",
-    		"url": "https://github.com/starspae/foxapplive"
+   		"name": "Tommy Davies",
+    		"url": "https://github.com/starspae/foxapplive.git"
 		
 }
 },
