@@ -1,0 +1,48 @@
+<!doctype html>
+<html <html manifest="maze.appcache">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <title>Maze</title>
+    <link rel="stylesheet" href="menu.css">
+  <meta name="description" content="Maze">
+    
+ </head>
+<body>
+<br>
+<br>
+<div id='menulist' class="menulist">
+<br>
+<br>
+<br>
+<br>
+<br>
+<img class="startbutton" src="img/start4.png" alt="Start" onclick="start()">
+<br>
+<img class="startbutton" src="img/rules4.png" alt="howtoplay" onclick="rules()">
+</div>
+<br>
+<br>
+<br><script>
+menux=document.getElementById('menulist');
+
+howplay='<br><b><u>English</u></b><br>Tap the path that is flashed at the start to make your way through the maze<br><br><b><u>Italiano</u></b><br>Toccare il percorso che è balenato alla partenza per rendere il vostro senso attraverso il labirinto<br><br><b><u>Español</u></b><br>Pulse sobre la ruta que estalló a comienzos de hacer su camino a través del laberinto<br><p onclick="home()">Return</p>'
+function rules()
+{
+menux.style.background = '#0A0A11'
+menux.style.opacity = '0.8'
+menux.style.color = '#FFFFFF'
+menux.innerHTML=(howplay)
+}
+function home()
+  {
+  window.location.assign("menu.html");
+  }
+function start()
+  {
+  window.location.assign("maze1.html");
+  }
+</script>
+
+  </body>
+</html>
